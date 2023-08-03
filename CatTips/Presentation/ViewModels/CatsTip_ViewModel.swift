@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-public protocol CatsTip_ViewModel_Protocol:ObservableObject {
+public protocol CatsTip_ViewModel_Protocol {
     var _currentCatsTip: CatsTip_Model {get set}
     var _catsTip_Interactor:GetNewTip_Interactor {get}
     
@@ -14,8 +14,9 @@ public protocol CatsTip_ViewModel_Protocol:ObservableObject {
     func renewCatsTip() async
 }
 
+@Observable
 public class CatsTip_ViewModel: CatsTip_ViewModel_Protocol {
-    @Published public var _currentCatsTip: CatsTip_Model = CatsTip_Model(fact: "", length: 0)
+    public var _currentCatsTip: CatsTip_Model = CatsTip_Model(fact: "", length: 0)
     public let _catsTip_Interactor  = GetNewTip_Interactor()
     
     public func getCurrentCatsTip() -> CatsTip_Model {
