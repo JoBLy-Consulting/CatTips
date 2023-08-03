@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		E6AD9CF42A7AB0060017FBD8 /* CatTipsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD9CF32A7AB0060017FBD8 /* CatTipsApp.swift */; };
-		E6AD9CF62A7AB0060017FBD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD9CF52A7AB0060017FBD8 /* ContentView.swift */; };
+		E6AD9CF62A7AB0060017FBD8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD9CF52A7AB0060017FBD8 /* MainView.swift */; };
 		E6AD9CF82A7AB0070017FBD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6AD9CF72A7AB0070017FBD8 /* Assets.xcassets */; };
 		E6AD9CFC2A7AB0070017FBD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6AD9CFB2A7AB0070017FBD8 /* Preview Assets.xcassets */; };
 		E6AD9D062A7AB0070017FBD8 /* CatTipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD9D052A7AB0070017FBD8 /* CatTipsTests.swift */; };
 		E6AD9D102A7AB0070017FBD8 /* CatTipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD9D0F2A7AB0070017FBD8 /* CatTipsUITests.swift */; };
 		E6AD9D122A7AB0070017FBD8 /* CatTipsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD9D112A7AB0070017FBD8 /* CatTipsUITestsLaunchTests.swift */; };
+		E6AD9D262A7ABD780017FBD8 /* DataConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD9D252A7ABD780017FBD8 /* DataConnector.swift */; };
+		E6AD9D282A7ABE080017FBD8 /* CatsTip_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD9D272A7ABE080017FBD8 /* CatsTip_Model.swift */; };
+		E6AD9D2A2A7ABF040017FBD8 /* GetNewTip_Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD9D292A7ABF040017FBD8 /* GetNewTip_Interactor.swift */; };
+		E6AD9D2C2A7AC03E0017FBD8 /* CatsTip_ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD9D2B2A7AC03E0017FBD8 /* CatsTip_ViewModel.swift */; };
+		E6AD9D2E2A7AC3EA0017FBD8 /* CatsTip_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD9D2D2A7AC3EA0017FBD8 /* CatsTip_Controller.swift */; };
+		E6AD9D302A7AFB800017FBD8 /* CatsTip_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD9D2F2A7AFB800017FBD8 /* CatsTip_View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,7 @@
 /* Begin PBXFileReference section */
 		E6AD9CF02A7AB0060017FBD8 /* CatTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6AD9CF32A7AB0060017FBD8 /* CatTipsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTipsApp.swift; sourceTree = "<group>"; };
-		E6AD9CF52A7AB0060017FBD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E6AD9CF52A7AB0060017FBD8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E6AD9CF72A7AB0070017FBD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6AD9CF92A7AB0070017FBD8 /* CatTips.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CatTips.entitlements; sourceTree = "<group>"; };
 		E6AD9CFB2A7AB0070017FBD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +51,12 @@
 		E6AD9D0B2A7AB0070017FBD8 /* CatTipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatTipsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6AD9D0F2A7AB0070017FBD8 /* CatTipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTipsUITests.swift; sourceTree = "<group>"; };
 		E6AD9D112A7AB0070017FBD8 /* CatTipsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTipsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E6AD9D252A7ABD780017FBD8 /* DataConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConnector.swift; sourceTree = "<group>"; };
+		E6AD9D272A7ABE080017FBD8 /* CatsTip_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsTip_Model.swift; sourceTree = "<group>"; };
+		E6AD9D292A7ABF040017FBD8 /* GetNewTip_Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNewTip_Interactor.swift; sourceTree = "<group>"; };
+		E6AD9D2B2A7AC03E0017FBD8 /* CatsTip_ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsTip_ViewModel.swift; sourceTree = "<group>"; };
+		E6AD9D2D2A7AC3EA0017FBD8 /* CatsTip_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsTip_Controller.swift; sourceTree = "<group>"; };
+		E6AD9D2F2A7AFB800017FBD8 /* CatsTip_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsTip_View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +107,10 @@
 		E6AD9CF22A7AB0060017FBD8 /* CatTips */ = {
 			isa = PBXGroup;
 			children = (
+				E6AD9D1E2A7ABBF00017FBD8 /* External Interfaces */,
+				E6AD9D1F2A7ABC010017FBD8 /* Presentation */,
+				E6AD9D202A7ABC650017FBD8 /* Use Cases */,
 				E6AD9CF32A7AB0060017FBD8 /* CatTipsApp.swift */,
-				E6AD9CF52A7AB0060017FBD8 /* ContentView.swift */,
 				E6AD9CF72A7AB0070017FBD8 /* Assets.xcassets */,
 				E6AD9CF92A7AB0070017FBD8 /* CatTips.entitlements */,
 				E6AD9CFA2A7AB0070017FBD8 /* Preview Content */,
@@ -127,6 +141,66 @@
 				E6AD9D112A7AB0070017FBD8 /* CatTipsUITestsLaunchTests.swift */,
 			);
 			path = CatTipsUITests;
+			sourceTree = "<group>";
+		};
+		E6AD9D1E2A7ABBF00017FBD8 /* External Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				E6AD9D252A7ABD780017FBD8 /* DataConnector.swift */,
+			);
+			path = "External Interfaces";
+			sourceTree = "<group>";
+		};
+		E6AD9D1F2A7ABC010017FBD8 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E6AD9D212A7ABC990017FBD8 /* Models */,
+				E6AD9D222A7ABCA40017FBD8 /* Controllers */,
+				E6AD9D232A7ABCBC0017FBD8 /* ViewModels */,
+				E6AD9D242A7ABCDD0017FBD8 /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E6AD9D202A7ABC650017FBD8 /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				E6AD9D292A7ABF040017FBD8 /* GetNewTip_Interactor.swift */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		E6AD9D212A7ABC990017FBD8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6AD9D272A7ABE080017FBD8 /* CatsTip_Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E6AD9D222A7ABCA40017FBD8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E6AD9D2D2A7AC3EA0017FBD8 /* CatsTip_Controller.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E6AD9D232A7ABCBC0017FBD8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E6AD9D2B2A7AC03E0017FBD8 /* CatsTip_ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E6AD9D242A7ABCDD0017FBD8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6AD9CF52A7AB0060017FBD8 /* MainView.swift */,
+				E6AD9D2F2A7AFB800017FBD8 /* CatsTip_View.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +333,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6AD9CF62A7AB0060017FBD8 /* ContentView.swift in Sources */,
+				E6AD9CF62A7AB0060017FBD8 /* MainView.swift in Sources */,
+				E6AD9D262A7ABD780017FBD8 /* DataConnector.swift in Sources */,
+				E6AD9D282A7ABE080017FBD8 /* CatsTip_Model.swift in Sources */,
 				E6AD9CF42A7AB0060017FBD8 /* CatTipsApp.swift in Sources */,
+				E6AD9D2E2A7AC3EA0017FBD8 /* CatsTip_Controller.swift in Sources */,
+				E6AD9D2A2A7ABF040017FBD8 /* GetNewTip_Interactor.swift in Sources */,
+				E6AD9D2C2A7AC03E0017FBD8 /* CatsTip_ViewModel.swift in Sources */,
+				E6AD9D302A7AFB800017FBD8 /* CatsTip_View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
