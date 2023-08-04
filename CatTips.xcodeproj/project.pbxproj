@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E62F90522A7CE87700E53638 /* CatsTipsFavorites_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62F90512A7CE87700E53638 /* CatsTipsFavorites_View.swift */; };
+		E62F90582A7CEA2E00E53638 /* CatsTipsFavorites_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62F90572A7CEA2E00E53638 /* CatsTipsFavorites_View.swift */; };
 		E6AD9CF42A7AB0060017FBD8 /* CatTipsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD9CF32A7AB0060017FBD8 /* CatTipsApp.swift */; };
 		E6AD9CF62A7AB0060017FBD8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD9CF52A7AB0060017FBD8 /* MainView.swift */; };
 		E6AD9CF82A7AB0070017FBD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6AD9CF72A7AB0070017FBD8 /* Assets.xcassets */; };
@@ -41,7 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E62F90512A7CE87700E53638 /* CatsTipsFavorites_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CatsTipsFavorites_View.swift; path = ../../../../../../../../../Documents/CatsTipsFavorites_View.swift; sourceTree = "<group>"; };
+		E62F90572A7CEA2E00E53638 /* CatsTipsFavorites_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsTipsFavorites_View.swift; sourceTree = "<group>"; };
 		E6AD9CF02A7AB0060017FBD8 /* CatTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6AD9CF32A7AB0060017FBD8 /* CatTipsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTipsApp.swift; sourceTree = "<group>"; };
 		E6AD9CF52A7AB0060017FBD8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -200,8 +200,8 @@
 			isa = PBXGroup;
 			children = (
 				E6AD9CF52A7AB0060017FBD8 /* MainView.swift */,
-				E62F90512A7CE87700E53638 /* CatsTipsFavorites_View.swift */,
 				E6AD9D2F2A7AFB800017FBD8 /* CatsTip_View.swift */,
+				E62F90572A7CEA2E00E53638 /* CatsTipsFavorites_View.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -342,7 +342,7 @@
 				E6AD9CF42A7AB0060017FBD8 /* CatTipsApp.swift in Sources */,
 				E6AD9D2E2A7AC3EA0017FBD8 /* CatsTip_Controller.swift in Sources */,
 				E6AD9D2A2A7ABF040017FBD8 /* GetNewTip_Interactor.swift in Sources */,
-				E62F90522A7CE87700E53638 /* CatsTipsFavorites_View.swift in Sources */,
+				E62F90582A7CEA2E00E53638 /* CatsTipsFavorites_View.swift in Sources */,
 				E6AD9D2C2A7AC03E0017FBD8 /* CatsTip_ViewModel.swift in Sources */,
 				E6AD9D302A7AFB800017FBD8 /* CatsTip_View.swift in Sources */,
 			);
