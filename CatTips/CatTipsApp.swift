@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct CatTipsApp: App {
@@ -13,5 +14,6 @@ struct CatTipsApp: App {
         WindowGroup {
             MainView()
         }
+        .modelContainer(for: SavedCatsTips_Model.self)
     }
 }
