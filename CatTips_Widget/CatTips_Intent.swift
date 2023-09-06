@@ -7,27 +7,19 @@
 
 import AppIntents
 import SwiftUI
-
-struct CurrentCatsTips {
-    private static let sharedDefaults = UserDefaults.standard
-    
-    static func currentTip() -> String {
-        sharedDefaults.string(forKey: "currentTip") ?? ""
-    }
-    
-    static func getNewTip() async {
-        let catsTip_Interactor = GetNewTip_Interactor()
-        
-        sharedDefaults.setValue(await catsTip_Interactor.getNewCatsTip().fact, forKey: "currentTip")
-    }
-}
+import SwiftData
 
 struct CatTips_Intent: AppIntent {
     static var title: LocalizedStringResource = "Get a new Cats Tip"
     static var description = IntentDescription("Display a new Cats Tip")
 
+    @MainActor
     func perform() async throws -> some IntentResult {
-        await CurrentCatsTips.getNewTip()
+        let _modelContext = try ModelContainer(for: CurrentCatsTips_Model.self).mainContext
+        let catsTip_Interactor = GetNewTip_Interactor()
+        
+        _modelContext.insert(CurrentCatsTips_Model(fact: await catsTip_Interactor.getNewCatsTip().fact))
+        
         return .result()
     }
 }

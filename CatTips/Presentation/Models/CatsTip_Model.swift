@@ -22,3 +22,14 @@ final class SavedCatsTips_Model {
         self.creationDate = creationDate
     }
 }
+
+@Model
+final class CurrentCatsTips_Model {
+    var fact:String
+    var creationDate: Date
+    
+    init(fact: String, creationDate: Date = .now) {
+        self.fact = fact
+        self.creationDate = creationDate
+    }
+}

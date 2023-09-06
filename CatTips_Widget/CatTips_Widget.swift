@@ -7,24 +7,34 @@
 
 import WidgetKit
 import SwiftUI
+import SwiftData
 
 struct Provider: TimelineProvider {
+    
+    
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), fact: CurrentCatsTips.currentTip())
+            return SimpleEntry(date: Date(), fact: "")
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), fact: CurrentCatsTips.currentTip())
-        completion(entry)
+            return completion(SimpleEntry(date: Date(), fact: ""))
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        let entries: [SimpleEntry] = [SimpleEntry(date: Date(), fact: CurrentCatsTips.currentTip())]
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-
-        let timeline = Timeline(entries: entries, policy: .atEnd)
-        completion(timeline)
+        Task { @MainActor in
+            let _modelContext = try ModelContainer(for: CurrentCatsTips_Model.self).mainContext
+            let _currentCatsTip = try? _modelContext.fetch(FetchDescriptor<CurrentCatsTips_Model>())
+            guard let currentCatsTip = _currentCatsTip?.last else {
+             return completion(Timeline(entries:[SimpleEntry(date: Date(), fact: "")], policy: .atEnd))
+            }
+             
+             let entries: [SimpleEntry] = [SimpleEntry(date: Date(), fact: currentCatsTip.fact)]
+             
+             // Generate a timeline consisting of five entries an hour apart, starting from the current date.
+             
+             let timeline = Timeline(entries: entries, policy: .atEnd)
+             completion(timeline)
+        }
     }
 }
 
