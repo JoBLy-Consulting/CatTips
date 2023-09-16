@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E62F905B2A7D757200E53638 /* MyFirstMacro in Frameworks */ = {isa = PBXBuildFile; productRef = E62F905A2A7D757200E53638 /* MyFirstMacro */; };
 		E62F905E2A7D766C00E53638 /* MyFirstMacro in Frameworks */ = {isa = PBXBuildFile; productRef = E62F905D2A7D766C00E53638 /* MyFirstMacro */; };
+		E672A3A32AB4B1A300F106F3 /* Folder_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E672A3A22AB4B1A300F106F3 /* Folder_Model.swift */; };
+		E672A3A72AB4C09200F106F3 /* FolderDetail_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E672A3A62AB4C09200F106F3 /* FolderDetail_View.swift */; };
 		E6AD9CF42A7AB0060017FBD8 /* CatTipsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD9CF32A7AB0060017FBD8 /* CatTipsApp.swift */; };
 		E6AD9CF62A7AB0060017FBD8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD9CF52A7AB0060017FBD8 /* MainView.swift */; };
 		E6AD9CF82A7AB0070017FBD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6AD9CF72A7AB0070017FBD8 /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		E631F7FF2A98E25C00E4E375 /* SwiftData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/SwiftData.framework; sourceTree = DEVELOPER_DIR; };
+		E672A3A22AB4B1A300F106F3 /* Folder_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folder_Model.swift; sourceTree = "<group>"; };
+		E672A3A62AB4C09200F106F3 /* FolderDetail_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderDetail_View.swift; sourceTree = "<group>"; };
 		E6AD9CF02A7AB0060017FBD8 /* CatTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6AD9CF32A7AB0060017FBD8 /* CatTipsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTipsApp.swift; sourceTree = "<group>"; };
 		E6AD9CF52A7AB0060017FBD8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				E6AD9D272A7ABE080017FBD8 /* CatsTip_Model.swift */,
+				E672A3A22AB4B1A300F106F3 /* Folder_Model.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 				E6AD9D2F2A7AFB800017FBD8 /* CatsTip_View.swift */,
 				E6D1949D2A7C184A005A629E /* CatsTipsFavorites_View.swift */,
 				E6DCF2BF2A98F25000BEA499 /* FavoriteCatsTip_View.swift */,
+				E672A3A62AB4C09200F106F3 /* FolderDetail_View.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -369,6 +375,8 @@
 				E6AD9D2E2A7AC3EA0017FBD8 /* CatsTip_Controller.swift in Sources */,
 				E6AD9D2A2A7ABF040017FBD8 /* GetNewTip_Interactor.swift in Sources */,
 				E6D1949E2A7C184A005A629E /* CatsTipsFavorites_View.swift in Sources */,
+				E672A3A32AB4B1A300F106F3 /* Folder_Model.swift in Sources */,
+				E672A3A72AB4C09200F106F3 /* FolderDetail_View.swift in Sources */,
 				E6AD9D2C2A7AC03E0017FBD8 /* CatsTip_ViewModel.swift in Sources */,
 				E6AD9D302A7AFB800017FBD8 /* CatsTip_View.swift in Sources */,
 			);

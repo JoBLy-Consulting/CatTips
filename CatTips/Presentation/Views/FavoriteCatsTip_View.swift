@@ -31,7 +31,3 @@ struct FavoriteCatsTip_View: View {
         .shadow(color: Color.black.opacity(0.4), radius: 20, x: 0, y: 10)
     }
 }
-
-#Preview {
-    FavoriteCatsTip_View(favoriteCatsTip: SavedCatsTips_Model(fact: "The first official cat show in the UK was organised at Crystal Palace in 1871.", creationDate: .now))
-}

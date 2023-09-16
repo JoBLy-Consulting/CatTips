@@ -6,10 +6,16 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct MainView: View {
     var _catsTip_ViewModel = CatsTip_ViewModel()
     @State var _showModal:Bool = false
+    @Environment(\.modelContext) private var _modelContext
+    @Query(filter: #Predicate<SavedCatsTips_Model>() {
+        $0.folder == nil
+    }
+    ) private var emptyFolder:[SavedCatsTips_Model]
     
     var body: some View {
         VStack {
@@ -22,6 +28,10 @@ struct MainView: View {
                 .foregroundColor(.accentColor)
                 .padding()
             HStack{
+                Button("Init Folders") {
+                    _modelContext.insert(Folder_Model(nameInput: "Without Folder", catsTipsList: emptyFolder))
+                }
+                .buttonStyle(.borderedProminent)
                 Button {
                     Task {
                         await _catsTip_ViewModel.renewCatsTip()

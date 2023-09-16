@@ -16,6 +16,7 @@ public struct CatsTip_Model:Codable {
 final class SavedCatsTips_Model {
     var fact:String
     var creationDate: Date
+    var folder: Folder_Model?
     
     init(fact: String, creationDate: Date = .now) {
         self.fact = fact

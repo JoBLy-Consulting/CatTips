@@ -14,6 +14,6 @@ struct CatTipsApp: App {
         WindowGroup {
             MainView()
         }
-        .modelContainer(for: SavedCatsTips_Model.self)
+        .modelContainer(for: [SavedCatsTips_Model.self, Folder_Model.self])
     }
 }
