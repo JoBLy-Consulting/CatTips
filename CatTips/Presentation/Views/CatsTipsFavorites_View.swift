@@ -10,6 +10,7 @@ import SwiftData
 
 struct CatsTipsFavorites_View: View {
     @Query(sort:\Folder_Model.creationDate, order:SortOrder.reverse) private var folders:[Folder_Model]
+    @Environment(\.modelContext) private var _modelContext
     
     var body: some View {
         NavigationStack {
@@ -19,6 +20,9 @@ struct CatsTipsFavorites_View: View {
                         FolderDetail_View(folderFilter: folder)
                     }
                 }
+                .onDelete(perform: { value in
+                    value.map { folders[$0] }.forEach { _modelContext.delete($0) }
+                })
             }
             .navigationTitle("My Favorites Tips")
             .listStyle(.plain)
